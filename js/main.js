@@ -5,7 +5,7 @@
     //--------------------------------------------------
     // 1. sticky menu
     // 2. background image
-    // 3. tilt js
+    // 3. stilt js
     // 4. mobile-menu(mean-menu)
     // 5. preloader
     // 6. One Page Nav
@@ -43,6 +43,13 @@
     });
 
 
+
+    // 3. tilt js
+    // ---------------------------------------------------------------------------
+    $('.tilt').tilt({
+        maxTilt:        15,
+        perspective:    1500,
+    });
 
 
 
@@ -119,8 +126,7 @@
         dots: false,
         arrows: false,
         infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2500,
+        speed: 300,
         slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
@@ -164,6 +170,7 @@
         arrows: true,
         prevArrow:'<b><i class="l-a fas fa-angle-left"></i></b>',
         nextArrow:'<b><i class="r-a fas fa-angle-right"></i></b>',
+        infinite: false,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -310,7 +317,7 @@
 
 
     var greenIcon = L.icon({
-        iconUrl: "images/icon/map-marker.png",
+        iconUrl: "images/map-marker.png",
 
         iconSize:     [78, 78], // size of the icon
         // shadowUrl: 'my-icon-shadow.png',
