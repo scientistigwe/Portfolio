@@ -666,6 +666,15 @@ a:focus,a:hover,.footer-menu li a:hover {
 	font-size: 30px;
 }
 
+.hover-text {
+    display: none;
+}
+
+.service-text:hover .hover-text {
+    display: block; /* Highlight color */
+}
+
+
 /* 11. testimonial area
 -------------------------------------------------------------- */
 .testimonial-text {
